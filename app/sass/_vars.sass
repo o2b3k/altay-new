@@ -1,0 +1,87 @@
+$default-font: "Montserrat", sans-serif
+$accent: #e52b30
+$grey: #898989
+$bold: 600
+$padding-min: 0.5%
+$padding-max: 7%
+
+a
+    transition: .5s
+a:hover
+    color: $accent
+    text-decoration: none
+.heading
+    .heading_head
+        color: $grey
+        font-weight: 400
+        letter-spacing: 1px
+    .heading_paraph
+        text-transform: uppercase
+        letter-spacing: 1px
+        font-weight: 600
+        font-size: 16px
+        color: darken($grey, 30%)
+        margin: 0
+        margin-top: 15px
+.heading:after
+    content: '...'
+    display: block
+    color: darken($grey, 30%)
+    font-size: 1.5rem
+em
+    font-size: 18px
+    color: $grey
+.btn
+    width: 170px
+    height: 100%
+    color: #fff
+    letter-spacing: 1px
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 13px
+    padding: 10px 
+    border-radius: 0
+    cursor: pointer
+.btn-accent
+    background-color: $accent
+.btn-default
+    background-color: lighten($grey, 15%)
+    color: #212121
+.btn:hover
+    background-color: lighten($grey, 30%)
+    color: #212121
+.line
+    width: 1px
+    height: 20px
+    background-color: lighten($grey, 30%)
+    margin: 0 20px
+
+.contact_span
+    color: $grey
+    font-size: 12px
+    font-weight: $bold
+    letter-spacing: 0.2px
+
+.line_horizontal
+    position: absolute
+    width: 100%
+    height: 1px
+    background-color: lighten($grey, 30%)
+    display: block
+.p_t
+    padding: 7% 0
+.description
+    font-size: 13px
+    line-height: 1.7
+
+.load
+    width: 100%
+    margin: 0 auto
+    margin-top: 5%
+    text-align: center
+    transition: all .5s ease-in-out
+.ion-navicon
+    font-size: 2.5rem
+.phone_btn
+    width: 100%
+    text-align: right

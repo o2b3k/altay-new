@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>
+		body {
+			opacity: 0;
+			overflow-x: hidden;
+		}
+
+		html {
+			background-color: #fff;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div id="app" class="wrapper_site">
+		<div id="navigation" class="navbar_hader">
+			<div class="header">
+				<div class="container">
+					<div class="row">
+						<div class="contact d-flex justify-content-between w-100 align-items-center">
+							<div class="company-info d-flex justify-content-start align-items-center">
+								<div class="contact_item">
+									<em class="ion-ios-email pr-2"></em>
+									<div class="contact_span">altay.osoo@mail.ru</div>
+								</div>
+								<div class="line"></div>
+								<div class="contact_item">
+									<em class="ion-android-call pr-2"></em>
+									<div class="contact_span">+996 (555) 208-181, +996 (708) 182-228</div>
+								</div>
+							</div>
+							<div class="line"></div>
+							<div class="contact_span">Курс: 68.20 сом</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="line_horizontal"></div>
+
+			<nav class="nav">
+				<div class="container">
+					<div class="row">
+						<div class="navigation d-flex justify-content-between align-items-center w-100">
+							<div class="logo d-flex align-items-center justify-content-start">
+								<img src="img/logo.png" alt="">
+								<div class="logo_text ">
+									<span class="nav_brand">АЛТАЙ</span>
+									<br>
+									<p class="nav_desc">Агенство недвижимости</p>
+								</div>
+							</div>
+							<div class="phone_btn">
+								<em class="phone_icon-bars ion-navicon"></em>
+							</div>
+							<div class="navbar-nav" style="width: 38%">
+								<ul class="menu d-flex p-0 m-0  d-flex w-100 justify-content-between" style="list-style-type: none">
+									<li>
+										<a href="#" class="menu-link">Главная</a>
+									</li>
+									<li>
+										<a href="#" class="menu-link">Услуги</a>
+									</li>
+									<li>
+										<a href="#" class="menu-link">Вакансии</a>
+									</li>
+									<li>
+										<a href="#" class="menu-link">О нас</a>
+									</li>
+									<li>
+										<a href="#" class="menu-link">Контакты</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<div id="top" class="main_content">
+			<figure class="figure_content">
+				<div class="img-main_content">
+					<img src="img/bg1.jpg" class="img-fluid" alt="" class="main_img">
+				</div>
+				<div class="container">
+					<div class="row">
+						<figcaption class="figure-caption">
+							<h1 class="h5">Агенство недвижимости ОсОО "АЛТАЙ"</h1>
+							<div class="main-text">
+								<p>Найди свой уголок</p>
+							</div>
+							<p class="h6">Продажа и обмен всех видов недвижимости</p>
+							<div class="pt-2">
+								<a href="#" class="btn btn-accent mr-2">Купить</a>
+								<a href="#" class="btn btn-default">Позвонить</a>
+							</div>
+						</figcaption>
+					</div>
+				</div>
+			</figure>
+			<div id="filter" class="sarch_filter  pt-4 pb-4 d-flex align-items-center">
+				<div class="container">
+					<div class="row">
+						<div class="search-icon">
+							<em class="ion-search"></em>
+						</div>
+						<div class="search-filder d-flex justify-content-between align-items-end w-100">
+							<div class="searc-group w-25">
+								<label for="search-id" class="search-label">ID Недвижимости</label>
+								<input type="text" name="search-id" class="form-control" placeholder="Введите ID">
+							</div>
+							<div class="searc-group w-25">
+								<label for="search-location" class="search-label">Регион</label>
+								<select name="search-location" id="" class="form-control">
+									<option value="">Бишкек</option>
+								</select>
+							</div>
+							<div class="searc-group w-25">
+								<label for="search-status" class="search-label">Статус</label>
+								<select name="search-status" id="" class="form-control">
+									<option value="">Продажа</option>
+								</select>
+							</div>
+							<div class="searc-group w-25">
+								<label for="search-price" class="search-label">Сортировать</label>
+								<select name="search-price" id="" class="form-control">
+									<option value="">По дате</option>
+									<option value="">По цене</option>
+								</select>
+							</div>
+							<div class="searc-group w-25">
+								<input type="submit" value="Применить" class="btn btn-accent">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="sell-plus" class="sell-estate">
+			<div class="heading text-center w-100">
+				<h2 class="h6 heading_head">Выгодные предложения</h2>
+				<p class="h5 heading_paraph">Успейте приобрести</p>
+			</div>
+
+			<!-- SLick -->
+			<div class="slick-button w-100 text-center">
+				<button type="button" class="prev">Prev</button>
+				<button type="button" class="next">Next</button>
+			</div>
+
+			<div class="container">
+				<div class="estate">
+					<div>
+						<div class="item">
+							<div class="img-item">
+								<a href="#">
+									<img src="img/item.jpg" alt="" class="img-fluid">
+								</a>
+								<div class="lenta">
+									<span>Продажа</span>
+								</div>
+								<div class="id">
+									<span>ID 9932</span>
+								</div>
+							</div>
+							<div class="p-3 item-block">
+								<div class="text-item d-flex justify-content-between align-items-center w-100">
+									<h3 class="h6">Срочно продаю 3к кв.</h3>
+									<span class="price">42000$</span>
+								</div>
+								<div class="param-item">
+									<div class="icon-item d-flex justify-content-between align-items-center flex-wrap">
+										<div class="param">
+											<em class="ion-android-pin pr-2"></em>
+											<span>Усубалиева 12</span>
+										</div>
+										<div class="param">
+											<em class="ion-android-contacts pr-2"></em>
+											<span>2</span>
+										</div>
+										<div class="param">
+											<em class="ion-waterdrop pr-2"></em>
+											<span>3</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="item">
+							<div class="img-item">
+								<a href="#">
+									<img src="img/item.jpg" alt="" class="img-fluid">
+								</a>
+								<div class="lenta">
+									<span>Продажа</span>
+								</div>
+								<div class="id">
+									<span>ID 9932</span>
+								</div>
+							</div>
+							<div class="p-3 item-block">
+								<div class="text-item d-flex justify-content-between align-items-center w-100">
+									<h3 class="h6">Срочно продаю 3к кв.</h3>
+									<span class="price">42000$</span>
+								</div>
+								<div class="param-item">
+									<div class="icon-item d-flex justify-content-between align-items-center flex-wrap">
+										<div class="param">
+											<em class="ion-android-pin pr-2"></em>
+											<span>Усубалиева 12</span>
+										</div>
+										<div class="param">
+											<em class="ion-android-contacts pr-2"></em>
+											<span>2</span>
+										</div>
+										<div class="param">
+											<em class="ion-waterdrop pr-2"></em>
+											<span>3</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="custom" class="custom-esate">
+			<div class="heading text-center w-100 pb-3">
+				<h2 class="h6 heading_head">Последние предложения</h2>
+				<p class="h5 heading_paraph">Вся недвижимость</p>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12 mt-5 custom_item-esate">
+						<figure class="d-flex h-100 item_custom-figure">
+							<div class="custom-img h-100">
+								<img src="img/item.jpg" class="img-fluid" alt="">
+								<div class="lenta">
+									<span>Продажа</span>
+								</div>
+								<div class="id">
+									<span>ID 8823</span>
+								</div>
+							</div>
+							<figcaption class="h-100 w-100">
+								<div class="h-100">
+									<div class="p-4 item-block w-100 h-100">
+										<div class="text-item d-flex justify-content-between align-items-center w-100">
+											<h3 class="h6">Срочно продаю 3к кв.</h3>
+											<span class="price price">42000$</span>
+										</div>
+										<div class="param-item">
+											<div class="icon-item d-flex justify-content-start align-items-center flex-wrap">
+												<div class="param pr-3">
+													<em class="ion-android-pin pr-2"></em>
+													<span>
+														<strong class="pr-2">Адрес:</strong>Усубалиева 12 / 23</span>
+												</div>
+												<div class="param pr-3">
+													<em class="ion-android-contacts pr-2"></em>
+													<span>
+														<strong class="pr-2">Кол-во комнат:</strong>5</span>
+												</div>
+												<div class="param pr-3">
+													<em class="ion-waterdrop pr-2"></em>
+													<span>
+														<strong class="pr-2">Ванных комнат:</strong>3</span>
+												</div>
+											</div>
+										</div>
+										<div class="pb-2"></div>
+										<hr>
+										<p class="description">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores hic omnis recusandae deleniti minima laboriosam eius, fuga
+											inventore voluptas doloribus veniam reprehenderit cumque, suscipit qui consequuntur cupiditate dolor delectus
+											tempore.
+										</p>
+										<div class="readmore text-right mt-5">
+											<a href="#" class="btn btn-default">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-lg-12 mt-5 custom_item-esate">
+						<figure class="d-flex h-100 item_custom-figure">
+							<div class="custom-img h-100">
+								<img src="img/item.jpg" class="img-fluid" alt="">
+								<div class="lenta">
+									<span>Продажа</span>
+								</div>
+								<div class="id">
+									<span>ID 8823</span>
+								</div>
+							</div>
+							<figcaption class="h-100 w-100">
+								<div class="h-100">
+									<div class="p-4 item-block w-100 h-100">
+										<div class="text-item d-flex justify-content-between align-items-center w-100">
+											<h3 class="h6">Срочно продаю 3к кв.</h3>
+											<span class="price price">42000$</span>
+										</div>
+										<div class="param-item">
+											<div class="icon-item d-flex justify-content-start align-items-center flex-wrap">
+												<div class="param pr-3">
+													<em class="ion-android-pin pr-2"></em>
+													<span>
+														<strong class="pr-2">Адрес:</strong>Усубалиева 12 / 23</span>
+												</div>
+												<div class="param pr-3">
+													<em class="ion-android-contacts pr-2"></em>
+													<span>
+														<strong class="pr-2">Кол-во комнат:</strong>5</span>
+												</div>
+												<div class="param pr-3">
+													<em class="ion-waterdrop pr-2"></em>
+													<span>
+														<strong class="pr-2">Ванных комнат:</strong>3</span>
+												</div>
+											</div>
+										</div>
+										<div class="pb-2"></div>
+										<hr>
+										<p class="description">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores hic omnis recusandae deleniti minima laboriosam eius, fuga
+											inventore voluptas doloribus veniam reprehenderit cumque, suscipit qui consequuntur cupiditate dolor delectus
+											tempore.
+										</p>
+										<div class="readmore text-right mt-5">
+											<a href="#" class="btn btn-default">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-lg-12 mt-5 custom_item-esate">
+						<figure class="d-flex h-100 item_custom-figure">
+							<div class="custom-img h-100">
+								<img src="img/item.jpg" class="img-fluid" alt="">
+								<div class="obmen">
+									<span>Обмен</span>
+								</div>
+								<div class="id">
+									<span>ID 8823</span>
+								</div>
+							</div>
+							<figcaption class="h-100 w-100">
+								<div class="h-100">
+									<div class="p-4 item-block w-100 h-100">
+										<div class="text-item d-flex justify-content-between align-items-center w-100">
+											<h3 class="h6">Срочно продаю 3к кв.</h3>
+											<span class="price price">42000$</span>
+										</div>
+										<div class="param-item">
+											<div class="icon-item d-flex justify-content-start align-items-center flex-wrap">
+												<div class="param pr-3">
+													<em class="ion-android-pin pr-2"></em>
+													<span>
+														<strong class="pr-2">Адрес:</strong>Усубалиева 12 / 23</span>
+												</div>
+												<div class="param pr-3">
+													<em class="ion-android-contacts pr-2"></em>
+													<span>
+														<strong class="pr-2">Кол-во комнат:</strong>5</span>
+												</div>
+												<div class="param pr-3">
+													<em class="ion-waterdrop pr-2"></em>
+													<span>
+														<strong class="pr-2">Ванных комнат:</strong>3</span>
+												</div>
+											</div>
+										</div>
+										<div class="pb-2"></div>
+										<hr>
+										<p class="description">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores hic omnis recusandae deleniti minima laboriosam eius, fuga
+											inventore voluptas doloribus veniam reprehenderit cumque, suscipit qui consequuntur cupiditate dolor delectus
+											tempore.
+										</p>
+										<div class="readmore text-right mt-5">
+											<a href="#" class="btn btn-default">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-lg-12 mt-5 custom_item-esate">
+						<figure class="d-flex h-100 item_custom-figure">
+							<div class="custom-img h-100">
+								<img src="img/item.jpg" class="img-fluid" alt="">
+								<div class="obmen">
+									<span>Обмен</span>
+								</div>
+								<div class="id">
+									<span>ID 8823</span>
+								</div>
+							</div>
+							<figcaption class="h-100 w-100">
+								<div class="h-100">
+									<div class="p-4 item-block w-100 h-100">
+										<div class="text-item d-flex justify-content-between align-items-center w-100">
+											<h3 class="h6">Срочно продаю 3к кв.</h3>
+											<span class="price price">42000$</span>
+										</div>
+										<div class="param-item">
+											<div class="icon-item d-flex justify-content-start align-items-center flex-wrap">
+												<div class="param pr-3">
+													<em class="ion-android-pin pr-2"></em>
+													<span>
+														<strong class="pr-2">Адрес:</strong>Усубалиева 12 / 23</span>
+												</div>
+												<div class="param pr-3">
+													<em class="ion-android-contacts pr-2"></em>
+													<span>
+														<strong class="pr-2">Кол-во комнат:</strong>5</span>
+												</div>
+												<div class="param pr-3">
+													<em class="ion-waterdrop pr-2"></em>
+													<span>
+														<strong class="pr-2">Ванных комнат:</strong>3</span>
+												</div>
+											</div>
+										</div>
+										<div class="pb-2"></div>
+										<hr>
+										<p class="description">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores hic omnis recusandae deleniti minima laboriosam eius, fuga
+											inventore voluptas doloribus veniam reprehenderit cumque, suscipit qui consequuntur cupiditate dolor delectus
+											tempore.
+										</p>
+										<div class="readmore text-right mt-5">
+											<a href="#" class="btn btn-default">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-lg-12 mt-5 custom_item-esate">
+						<figure class="d-flex h-100 item_custom-figure">
+							<div class="custom-img h-100">
+								<img src="img/item.jpg" class="img-fluid" alt="">
+								<div class="obmen">
+									<span>Обмен</span>
+								</div>
+								<div class="id">
+									<span>ID 8823</span>
+								</div>
+							</div>
+							<figcaption class="h-100 w-100">
+								<div class="h-100">
+									<div class="p-4 item-block w-100 h-100">
+										<div class="text-item d-flex justify-content-between align-items-center w-100">
+											<h3 class="h6">Срочно продаю 3к кв.</h3>
+											<span class="price price">42000$</span>
+										</div>
+										<div class="param-item">
+											<div class="icon-item d-flex justify-content-start align-items-center flex-wrap">
+												<div class="param pr-3">
+													<em class="ion-android-pin pr-2"></em>
+													<span>
+														<strong class="pr-2">Адрес:</strong>Усубалиева 12 / 23</span>
+												</div>
+												<div class="param pr-3">
+													<em class="ion-android-contacts pr-2"></em>
+													<span>
+														<strong class="pr-2">Кол-во комнат:</strong>5</span>
+												</div>
+												<div class="param pr-3">
+													<em class="ion-waterdrop pr-2"></em>
+													<span>
+														<strong class="pr-2">Ванных комнат:</strong>3</span>
+												</div>
+											</div>
+										</div>
+										<div class="pb-2"></div>
+										<hr>
+										<p class="description">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores hic omnis recusandae deleniti minima laboriosam eius, fuga
+											inventore voluptas doloribus veniam reprehenderit cumque, suscipit qui consequuntur cupiditate dolor delectus
+											tempore.
+										</p>
+										<div class="readmore text-right mt-5">
+											<a href="#" class="btn btn-default">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-lg-12 mt-5 custom_item-esate">
+						<figure class="d-flex h-100 item_custom-figure">
+							<div class="custom-img h-100">
+								<img src="img/item.jpg" class="img-fluid" alt="">
+								<div class="obmen">
+									<span>Обмен</span>
+								</div>
+								<div class="id">
+									<span>ID 8823</span>
+								</div>
+							</div>
+							<figcaption class="h-100 w-100">
+								<div class="h-100">
+									<div class="p-4 item-block w-100 h-100">
+										<div class="text-item d-flex justify-content-between align-items-center w-100">
+											<h3 class="h6">Срочно продаю 3к кв.</h3>
+											<span class="price price">42000$</span>
+										</div>
+										<div class="param-item">
+											<div class="icon-item d-flex justify-content-start align-items-center flex-wrap">
+												<div class="param pr-3">
+													<em class="ion-android-pin pr-2"></em>
+													<span>
+														<strong class="pr-2">Адрес:</strong>Усубалиева 12 / 23</span>
+												</div>
+												<div class="param pr-3">
+													<em class="ion-android-contacts pr-2"></em>
+													<span>
+														<strong class="pr-2">Кол-во комнат:</strong>5</span>
+												</div>
+												<div class="param pr-3">
+													<em class="ion-waterdrop pr-2"></em>
+													<span>
+														<strong class="pr-2">Ванных комнат:</strong>3</span>
+												</div>
+											</div>
+										</div>
+										<div class="pb-2"></div>
+										<hr>
+										<p class="description">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores hic omnis recusandae deleniti minima laboriosam eius, fuga
+											inventore voluptas doloribus veniam reprehenderit cumque, suscipit qui consequuntur cupiditate dolor delectus
+											tempore.
+										</p>
+										<div class="readmore text-right mt-5">
+											<a href="#" class="btn btn-default">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-lg-12 mt-5 custom_item-esate">
+						<figure class="d-flex h-100 item_custom-figure">
+							<div class="custom-img h-100">
+								<img src="img/item.jpg" class="img-fluid" alt="">
+								<div class="obmen">
+									<span>Обмен</span>
+								</div>
+								<div class="id">
+									<span>ID 8823</span>
+								</div>
+							</div>
+							<figcaption class="h-100 w-100">
+								<div class="h-100">
+									<div class="p-4 item-block w-100 h-100">
+										<div class="text-item d-flex justify-content-between align-items-center w-100">
+											<h3 class="h6">Срочно продаю 3к кв.</h3>
+											<span class="price price">42000$</span>
+										</div>
+										<div class="param-item">
+											<div class="icon-item d-flex justify-content-start align-items-center flex-wrap">
+												<div class="param pr-3">
+													<em class="ion-android-pin pr-2"></em>
+													<span>
+														<strong class="pr-2">Адрес:</strong>Усубалиева 12 / 23</span>
+												</div>
+												<div class="param pr-3">
+													<em class="ion-android-contacts pr-2"></em>
+													<span>
+														<strong class="pr-2">Кол-во комнат:</strong>5</span>
+												</div>
+												<div class="param pr-3">
+													<em class="ion-waterdrop pr-2"></em>
+													<span>
+														<strong class="pr-2">Ванных комнат:</strong>3</span>
+												</div>
+											</div>
+										</div>
+										<div class="pb-2"></div>
+										<hr>
+										<p class="description">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores hic omnis recusandae deleniti minima laboriosam eius, fuga
+											inventore voluptas doloribus veniam reprehenderit cumque, suscipit qui consequuntur cupiditate dolor delectus
+											tempore.
+										</p>
+										<div class="readmore text-right mt-5">
+											<a href="#" class="btn btn-default">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-lg-12 mt-5 custom_item-esate">
+						<figure class="d-flex h-100 item_custom-figure">
+							<div class="custom-img h-100">
+								<img src="img/item.jpg" class="img-fluid" alt="">
+								<div class="obmen">
+									<span>Обмен</span>
+								</div>
+								<div class="id">
+									<span>ID 8823</span>
+								</div>
+							</div>
+							<figcaption class="h-100 w-100">
+								<div class="h-100">
+									<div class="p-4 item-block w-100 h-100">
+										<div class="text-item d-flex justify-content-between align-items-center w-100">
+											<h3 class="h6">Срочно продаю 3к кв.</h3>
+											<span class="price price">42000$</span>
+										</div>
+										<div class="param-item">
+											<div class="icon-item d-flex justify-content-start align-items-center flex-wrap">
+												<div class="param pr-3">
+													<em class="ion-android-pin pr-2"></em>
+													<span>
+														<strong class="pr-2">Адрес:</strong>Усубалиева 12 / 23</span>
+												</div>
+												<div class="param pr-3">
+													<em class="ion-android-contacts pr-2"></em>
+													<span>
+														<strong class="pr-2">Кол-во комнат:</strong>5</span>
+												</div>
+												<div class="param pr-3">
+													<em class="ion-waterdrop pr-2"></em>
+													<span>
+														<strong class="pr-2">Ванных комнат:</strong>3</span>
+												</div>
+											</div>
+										</div>
+										<div class="pb-2"></div>
+										<hr>
+										<p class="description">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores hic omnis recusandae deleniti minima laboriosam eius, fuga
+											inventore voluptas doloribus veniam reprehenderit cumque, suscipit qui consequuntur cupiditate dolor delectus
+											tempore.
+										</p>
+										<div class="readmore text-right mt-5">
+											<a href="#" class="btn btn-default">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="load">
+					<a href="#" id="loadMore" class="loadMore text-center btn btn-accent">Загрузить еще</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="services" class="services p_t">
+			<div class="heading text-center w-100">
+				<h2 class="h6 heading_head">Услуги</h2>
+				<p class="h5 heading_paraph">Мы предлагаем следующее</p>
+			</div>
+			<div class="container mt-5">
+				<div class="service">
+					<div>
+						<div class="serve-item">
+							<div class="img-service">
+								<img src="img/bg1.jpg" class="img-fluid" alt="">
+							</div>
+							<div class="text-service">
+								<div class="pt-3 pb-1 d-flex justify-content-between align-items-center flex-wrap">
+									<h3 class="h5">Юридические</h3>
+									<span class="date">12 / 01 / 2017</span>
+								</div>
+								<hr>
+								<div class="description">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil vitae veniam illum natus ex vel sed dolor sint deleniti
+										placeat.
+									</p>
+								</div>
+								<div class="readmore text-right">
+									<a href="#" class="btn btn-accent">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="serve-item">
+							<div class="img-service">
+								<img src="img/bg1.jpg" class="img-fluid" alt="">
+							</div>
+							<div class="text-service">
+								<div class="pt-3 pb-1 d-flex justify-content-between align-items-center flex-wrap">
+									<h3 class="h5">Юридические</h3>
+									<span class="date">12 / 01 / 2017</span>
+								</div>
+								<hr>
+								<div class="description">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil vitae veniam illum natus ex vel sed dolor sint deleniti
+										placeat.
+									</p>
+								</div>
+								<div class="readmore text-right">
+									<a href="#" class="btn btn-accent">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer" class="footer p_t">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-4">
+						<div class="foo-heading mt-5">
+							<h2 class="h5">О компании</h2>
+						</div>
+						<p class="description mt-5">
+							Мы ответственны в своей работе и заботимся об удобстве наших клиентов, поэтому в целях экономии Вашего времени создан сайт
+							АН «Алтай. База постоянно обновляется. Здесь вы сможете найти все варианты первичного, вторичного жилья ,квартиры,
+							дома, участки и коммерческой недвижимости (помещения под офисы, магазины, склады и т.д.).
+						</p>
+						<div class=" mt-5 logo d-flex align-items-center justify-content-start">
+							<img src="img/logo.png" alt="">
+							<div class="logo_text ">
+								<span class="nav_brand">АЛТАЙ</span>
+								<br>
+								<p class="nav_desc">Агенство недвижимости</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="foo-heading mt-5">
+							<h2 class="h5">Последние добавленные</h2>
+						</div>
+						<div class="mt-5">
+							<div class="foo-lates d-flex align-items-center justify-content-between">
+								<div class="foo-img pr-2">
+									<img src="img/item.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="foo-text ">
+									<a href="#">
+										<h3 class="h6">Срочно продаю квартиру в центре города</h3>
+									</a>
+									<span class="price">
+										32000$
+									</span>
+								</div>
+							</div>
+							<div class="foo-lates d-flex align-items-center justify-content-between">
+								<div class="foo-img pr-2">
+									<img src="img/item.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="foo-text ">
+									<a href="#">
+										<h3 class="h6">Срочно продаю квартиру в центре города</h3>
+									</a>
+									<span class="price">
+										32000$
+									</span>
+								</div>
+							</div>
+							<div class="foo-lates d-flex align-items-center justify-content-between">
+								<div class="foo-img pr-2">
+									<img src="img/item.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="foo-text ">
+									<a href="#">
+										<h3 class="h6">Срочно продаю квартиру в центре города</h3>
+									</a>
+									<span class="price">
+										32000$
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="foo-heading mt-5">
+							<h2 class="h5">Контакты</h2>
+						</div>
+						<div class="mt-5">
+							<div class="d-flex mb-2">
+								<em class="ion-ios-location"></em>
+								<p class="description pl-4">Кыргызстан, Бишкек ул. Токтогула/Пр.мира, 173 кв. 2</p>
+							</div>
+							<div class="d-flex  mb-2">
+								<em class="ion-ios-email"></em>
+								<p class="description pl-4">altay.osoo@mail.ru</p>
+							</div>
+							<div class="d-flex  mb-2">
+								<em class="ion-android-globe"></em>
+								<p class="description pl-4">http://altay.kg</p>
+							</div>
+							<div class="d-flex  mb-2">
+								<em class="ion-android-phone-portrait"></em>
+								<p class="description pl-4">+996 (555) 208-181, +996 (708) 182-228</p>
+							</div>
+							<div class="d-flex 	 mb-2">
+								<em class="ion-android-call"></em>
+								<p class="description pl-4">+312 31-30-86</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="copyright pt-2 pb-2">
+			<div class="container">
+				<div class="row">
+					<p class="description">ALTAY © 2018 Все права защишены</p>
+				</div>
+			</div>
+		</div>
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/main.min.css">
+		<!-- JS -->
+		<script src="js/scripts.min.js"></script>
+		<script src="libs/jquery/dist/slick.min.js"></script>
+</body>
+
+</html>
